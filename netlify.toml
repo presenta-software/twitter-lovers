@@ -1,4 +1,3 @@
 [build]
   functions = "src/functions"
-  # double run because the function needs the built index, then we build the function
-  command = "npm run build && node dump.js && npm run build"
+  command = "npm run build"
