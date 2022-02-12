@@ -19,6 +19,7 @@ const Copy = ({ url, name1, name2 }) => {
     const obstr = JSON.stringify(ob)
     const obstrb = btoa(obstr)
     const fullurl = process.env.REACT_APP_BASE_SERVICE_URL + obstrb
+    console.log(fullurl)
 
     const shrtnrUrl = process.env.REACT_APP_SHORTNER_SERVICE_URL
     const shortRes = await axios(shrtnrUrl, {
