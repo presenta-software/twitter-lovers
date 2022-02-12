@@ -48,11 +48,11 @@ const Form = ({ onBeginAction, onHandleAction, onHandleError }) => {
       <div className='form'>
 
         <div className='r'>
-          <span>@</span><input  autocomplete='off' placeholder='First Twitter Username' ref={tfUsername1} type='text' onChange={handleTyping} />
+          <span>@</span><input autoComplete='off' placeholder='First Twitter Username' ref={tfUsername1} type='text' onChange={handleTyping} />
         </div>
 
         <div className='r'>
-          <span>@</span><input  autocomplete='off' placeholder='Second Twitter Username' ref={tfUsername2} type='text' onChange={handleTyping} />
+          <span>@</span><input autoComplete='off' placeholder='Second Twitter Username' ref={tfUsername2} type='text' onChange={handleTyping} />
         </div>
 
         <button disabled={btnDisabled} onClick={handleGenerate}>{btnLabel}</button>

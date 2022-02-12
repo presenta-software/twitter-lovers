@@ -135,7 +135,6 @@ input, button{
   padding: .5rem;
   width: 100%;
   border: 1px solid #ddd;
-  text-align: center;
   color: #474747;
 }
 .form button{

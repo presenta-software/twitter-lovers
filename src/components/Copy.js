@@ -1,6 +1,5 @@
 import { useState } from 'react'
 import copyClipboard from './utils/copyClipboard'
-import axios from 'axios'
 
 const Copy = ({ url, name1, name2 }) => {
   const [btnCopyLabel, setBtnCopyLabel] = useState('Copy sharable URL')
@@ -19,14 +18,13 @@ const Copy = ({ url, name1, name2 }) => {
     const obstr = JSON.stringify(ob)
     const obstrb = btoa(obstr)
     const fullurl = process.env.REACT_APP_BASE_SERVICE_URL + obstrb
-    console.log(fullurl)
 
     const shrtnrUrl = process.env.REACT_APP_SHORTNER_SERVICE_URL
-    const shortRes = await axios(shrtnrUrl, {
+    const shortRes = await fetch(shrtnrUrl, {
       method: 'POST',
       body: JSON.stringify({ url: fullurl })
     })
-    const short = shortRes.data
+    const short = await shortRes.json()
 
     if (!short.url) {
       console.log('error', short)
