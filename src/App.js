@@ -12,7 +12,8 @@ import Error from './components/Error'
 function App () {
   const [showError, setShowError] = useState(false)
   const [showCard, setShowCard] = useState(false)
-  const [showName, setShowName] = useState(false)
+  const [showName1, setShowName1] = useState(false)
+  const [showName2, setShowName2] = useState(false)
   const [isLoading, setIsLoading] = useState(false)
 
   const handleBegin = () => {
@@ -21,9 +22,10 @@ function App () {
     setIsLoading(true)
   }
 
-  const handleAction = (url, name) => {
+  const handleAction = (url, n1, n2) => {
     setShowCard(url)
-    setShowName(name)
+    setShowName1(n1)
+    setShowName2(n2)
     setIsLoading(false)
   }
 
@@ -46,7 +48,7 @@ function App () {
       {showError && <Error message={showError} />}
 
       <Card url={showCard} loading={isLoading} />
-      {showCard && <Copy url={showCard} name={showName} />}
+      {showCard && <Copy url={showCard} name1={showName1} name2={showName2} />}
 
       <Footer />
 

@@ -46,7 +46,7 @@ mark{
 }
 .right img{
   box-shadow: 0 0 20px #999;
-  transform: rotate(6deg);
+  transform: rotate(3deg);
 }
 
 .left{
