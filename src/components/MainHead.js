@@ -6,9 +6,10 @@ const MainHead = () => {
         <h1>
           <span className='alt'>Twitter </span>
           <span className='alt'>Lovers</span>
-          <span className='main'> Card </span>
-          <span className='main'>Generator</span>
         </h1>
+        <p>
+          <span className='main'>Graphic Card Generator for Twitter couples</span>
+        </p>
       </div>
 
       <div className='right'>
