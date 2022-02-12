@@ -5,7 +5,7 @@ const Card = ({ url, loading }) => {
     <div className='wrapper'>
       <div className='card'>
         <div className='inner'>
-          {url && <img alt='Github User Since Card' src={url + '?w=700'} />}
+          {url && <img alt='Twitter-Lovers Card' src={url + '?w=700'} />}
           {(!loading && !url) && <p>Empty</p>}
           {loading && <Loader />}
         </div>
