@@ -36,7 +36,7 @@ const Copy = ({ url, name1, name2 }) => {
     setCopied(shrtnrUrl + short.url)
   }
 
-  const twUrl = 'https://twitter.com/intent/tweet?text=Check this Github-Since Card:&url=' + copied
+  const twUrl = 'https://twitter.com/intent/tweet?text=Check this Twitter-Lovers Card:&url=' + copied
 
   return (
     <div className='cta'>
